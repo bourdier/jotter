@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Jotter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Jotter is a simple and intuitive markdown note editor. It allows you to easily create, edit, and organize your notes in a clean and distraction-free environment. Whether you're taking notes for work, school, or personal projects, Jotter is the perfect tool to help you stay organized and focused.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Simple and intuitive interface**: Jotter's interface is designed to be easy to use and clutter-free, so you can focus on your writing.
+- **Markdown support**: Jotter supports the Markdown syntax, so you can easily format your notes and create headings, lists, links, and more.
+- **Live preview**: Jotter provides a live preview of your notes as you type, so you can see exactly how your formatting will look before you save your note.
+- **Multiple notes**: Jotter allows you to create and manage multiple notes, so you can keep your notes organized and separate.
+- **Export and import**: Jotter allows you to export your notes as Markdown files, so you can easily share them or move them to another app. You can also import Markdown files into Jotter.
 
-### `npm start`
+## Usage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To use Jotter, simply log in or signup and create a new note by clicking the "New Note" button. You can then start typing your note using Markdown syntax. Jotter will automatically convert your Markdown syntax into formatted text in the live preview.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To save your note, click the "Save" button. Your note will be saved and added to the list of notes. To edit an existing note, simply click on its title in the list of notes.
 
-### `npm test`
+To export a note, click the "Export" button while viewing the note. You can then save the Markdown file to your computer. To import a Markdown file into Jotter, click the "Import" button on the homepage and select the file you want to import.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Contributing
 
-### `npm run build`
+If you find a bug or have a feature request, please open an issue on the [Jotter GitHub repository](https://github.com/bourdier/jotter/issues). If you want to contribute to Jotter's development, please fork the repository and submit a pull request with your changes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## License
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Jotter is released under the [MIT License](https://github.com/bourdier/jotter/blob/main/LICENSE). Feel free to use and modify Jotter as you see fit.
