@@ -51,8 +51,7 @@ export default function Dashboard() {
           </div>
         ) : (
           <div className="upperbar">
-            <h2>New</h2>
-            <button className="no" onClick={toZero}><i class="fa-solid fa-fw fa-arrow-left"></i></button>
+            <button onClick={toZero}><i class="fa-solid fa-fw fa-arrow-left"></i> Go back</button>
           </div>
         )}
         {notes === 0 ? (
