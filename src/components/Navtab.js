@@ -2,8 +2,10 @@ export default function Navtab() {
   return (
     <div className="navtab">
       <div className="navtab__header">
-        <h1 className="logo">jotter</h1>
-        <input type="text" id="searchbox" placeholder="Search notes" />
+        <div className="navtab__header__content">
+          <h1 className="logo">jotter</h1>
+          <input type="text" id="searchbox" placeholder="Search notes" />
+        </div>
         <div className="navtab__tools navtab__body">
           <ul className="no-bullet">
             <li><button className="no"><i className="fa-solid fa-fw fa-square-plus"></i>New notes</button></li>
