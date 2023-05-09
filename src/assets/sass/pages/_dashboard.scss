@@ -1,5 +1,7 @@
 .dashboard {
-  &__header {
-    display: flex;
+  display: flex;
+  flex-direction: row;
+  &__content {
+    width: 100%;
   }
 }

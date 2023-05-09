@@ -226,8 +226,12 @@ input:active {
   text-decoration: underline;
 }
 
-.dashboard__header {
+.dashboard {
   display: flex;
+  flex-direction: row;
+}
+.dashboard__content {
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */
