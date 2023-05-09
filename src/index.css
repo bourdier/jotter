@@ -212,4 +212,8 @@ input:active {
   text-decoration: underline;
 }
 
+.dashboard__header {
+  display: flex;
+}
+
 /*# sourceMappingURL=index.css.map */
