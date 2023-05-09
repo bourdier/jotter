@@ -28,6 +28,8 @@ button {
     transition: all 0.3s ease-in-out;
     font-size: 20px;
     color: $tertiary;
+    width: 100%;
+    display: flex;
     a {
       color: $primary !important;
       text-decoration: none !important;

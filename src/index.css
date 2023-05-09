@@ -48,6 +48,8 @@ button.no {
   transition: all 0.3s ease-in-out;
   font-size: 20px;
   color: #262626;
+  width: 100%;
+  display: flex;
 }
 button.no a {
   color: #000 !important;
