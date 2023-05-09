@@ -13,6 +13,7 @@ export default function Navtab() {
         </ul>
       </div>
       <div className="navtab__folders">
+        <h2>Folders</h2>
         <ul className="no-bullet">
           <li><button className="no"><i className="fa-solid fa-fw fa-folder"></i>Folder 1</button></li>
         </ul>
