@@ -27,6 +27,7 @@ button {
   border-radius: 5px;
   padding: 5px 20px;
   cursor: pointer;
+  font-family: "Work Sans", sans-serif;
   transition: all 0.3s ease-in-out;
 }
 button a {
@@ -47,6 +48,7 @@ button:disabled {
 .homepage {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 75px;
   height: 100vh;
 }
 .homepage nav {
@@ -61,6 +63,7 @@ button:disabled {
 }
 .homepage nav ul {
   display: flex;
+  align-items: center;
   list-style: none;
 }
 .homepage nav ul li {
@@ -69,6 +72,9 @@ button:disabled {
 .homepage nav ul li a {
   text-decoration: none;
   color: #000;
+  font-size: 18px;
+}
+.homepage nav ul li a button {
   font-size: 18px;
 }
 .homepage nav ul li a:hover {

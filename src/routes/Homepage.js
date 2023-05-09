@@ -8,7 +8,7 @@ export default function Homepage() {
         <ul>
           <li><a href="/usage">usage</a></li>
           <li><a href="/login">log in</a></li>
-          <li><button><a href="/signup">sign up</a></button></li>
+          <li><a href="/signup"><button>sign up</button></a></li>
         </ul>
       </nav>
       <main>

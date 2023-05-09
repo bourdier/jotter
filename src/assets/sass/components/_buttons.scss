@@ -5,6 +5,7 @@ button {
   border-radius: 5px;
   padding: 5px 20px;
   cursor: pointer;
+  font-family: $subtitle;
   transition: all 0.3s ease-in-out;
   a {
     color: $white !important;
