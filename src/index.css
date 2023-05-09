@@ -88,6 +88,12 @@ input:active {
   flex-direction: column;
   padding: 10px 50px;
 }
+.navtab__body h2 {
+  margin: 0;
+}
+.navtab__body ul {
+  margin: 5px 0 0 0;
+}
 .navtab button {
   font-size: 20px;
 }
