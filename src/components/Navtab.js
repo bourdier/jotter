@@ -18,6 +18,8 @@ export default function Navtab() {
         <h2>Folders</h2>
         <ul className="no-bullet">
           <li><button className="no"><i className="fa-solid fa-fw fa-folder"></i>Folder 1</button></li>
+          <li><button className="no"><i className="fa-solid fa-fw fa-folder"></i>Folder 2</button></li>
+          <li><button className="no"><i className="fa-solid fa-fw fa-folder"></i>Folder 3</button></li>
         </ul>
       </div>
       <div className="navtab__footer navtab__body">
