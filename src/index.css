@@ -100,6 +100,9 @@ input:active {
 .navtab i {
   margin-right: 10px;
 }
+.navtab input {
+  font-size: 16px;
+}
 
 .homepage {
   max-width: 1440px;
