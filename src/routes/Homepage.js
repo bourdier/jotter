@@ -2,7 +2,7 @@ import Preview from '../assets/images/preview.png';
 
 export default function Homepage() {
   return (
-    <>
+    <div className="homepage">
       <nav>
         <h1>jotter</h1>
         <ul>
@@ -12,7 +12,7 @@ export default function Homepage() {
         </ul>
       </nav>
       <main>
-        <div class="homepage__hero">
+        <div className="homepage__hero">
           <h2>Minimalist markdown editor</h2>
           <p>
             Jotter is a simple and intuitive markdown note editor. <br/>
@@ -20,7 +20,7 @@ export default function Homepage() {
             Whether you're taking notes for work, school, or personal projects, Jotter is the perfect tool to help you stay organized and focused.
           </p>
         </div>
-        <div class="homepage__preview">
+        <div className="homepage__preview">
           <img src={Preview} alt="Jotter preview" />
         </div>
       </main>
@@ -30,6 +30,6 @@ export default function Homepage() {
           <li><a href="https://github.com/bourdier/jotter"><i class="fa-brands fa-github"></i></a></li>
         </ul>
       </footer>
-    </>
+    </div>
   )
 }
