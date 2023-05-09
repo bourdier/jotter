@@ -42,7 +42,7 @@ button.no {
   color: #000;
   border: none;
   border-radius: 5px;
-  padding: 5px 20px;
+  padding: 5px 10px;
   cursor: pointer;
   font-family: "Work Sans", sans-serif;
   transition: all 0.3s ease-in-out;
@@ -53,6 +53,11 @@ button.no a {
 }
 button.no:hover {
   background-color: #e6e6e6;
+}
+
+ul.no-bullet {
+  list-style-type: none;
+  padding: 0;
 }
 
 .homepage {
