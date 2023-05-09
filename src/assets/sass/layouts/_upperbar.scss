@@ -1,0 +1,12 @@
+.upperbar {
+  height: 75px;
+  width: 100%;
+  border-bottom: 1px solid $secondary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px 0 25px;
+  h2 {
+    margin: 0;
+  }
+}
