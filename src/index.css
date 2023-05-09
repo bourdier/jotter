@@ -46,6 +46,8 @@ button.no {
   cursor: pointer;
   font-family: "Work Sans", sans-serif;
   transition: all 0.3s ease-in-out;
+  font-size: 20px;
+  color: #262626;
 }
 button.no a {
   color: #000 !important;
@@ -53,6 +55,7 @@ button.no a {
 }
 button.no:hover {
   background-color: #e6e6e6;
+  color: #000;
 }
 
 ul.no-bullet {
@@ -93,9 +96,6 @@ input:active {
 }
 .navtab__body ul {
   margin: 5px 0 0 0;
-}
-.navtab button {
-  font-size: 20px;
 }
 .navtab i {
   margin-right: 10px;

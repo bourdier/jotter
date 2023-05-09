@@ -26,12 +26,15 @@ button {
     cursor: pointer;
     font-family: $subtitle;
     transition: all 0.3s ease-in-out;
+    font-size: 20px;
+    color: $tertiary;
     a {
       color: $primary !important;
       text-decoration: none !important;
     }
     &:hover {
       background-color: darken($white, 10%);
+      color: $primary;
     }
   }
 }
