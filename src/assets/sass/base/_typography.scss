@@ -5,3 +5,18 @@
 $title: 'Cairo', sans-serif;
 $subtitle: 'Work Sans', sans-serif;
 $text: 'Hind Madurai', sans-serif;
+
+h1, h2 {
+  font-family: $title;
+  font-weight: 400;
+}
+
+a {
+  font-family: $subtitle;
+  font-weight: 400;
+}
+
+p {
+  font-family: $text;
+  font-weight: 400;
+}
