@@ -2,4 +2,87 @@ body {
   padding: 0;
 }
 
+.homepage {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100vh;
+}
+.homepage nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.homepage nav h1 {
+  font-size: 38px;
+}
+.homepage nav ul {
+  display: flex;
+  list-style: none;
+}
+.homepage nav ul li {
+  margin-left: 20px;
+}
+.homepage nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+.homepage nav ul li a:hover {
+  text-decoration: underline;
+}
+.homepage main {
+  display: flex;
+  justify-content: space-evenly;
+}
+.homepage main h2 {
+  font-size: 30px;
+}
+.homepage main p {
+  font-size: 18px;
+}
+.homepage main img {
+  height: 512px;
+  width: 720px;
+  object-fit: cover;
+  border: 1px solid #eee;
+  border-radius: 15px;
+}
+.homepage__hero {
+  max-width: 500px;
+  margin: auto 0;
+}
+.homepage footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.homepage footer i {
+  color: #fff;
+}
+.homepage footer p {
+  font-size: 18px;
+}
+.homepage footer ul {
+  display: flex;
+  list-style: none;
+}
+.homepage footer ul li {
+  margin-left: 20px;
+}
+.homepage footer ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+.homepage footer ul li a:hover {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=index.css.map */

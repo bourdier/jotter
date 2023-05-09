@@ -4,7 +4,7 @@ export default function Homepage() {
   return (
     <div className="homepage">
       <nav>
-        <h1>jotter</h1>
+        <h1 className="logo">jotter</h1>
         <ul>
           <li><a href="/usage">usage</a></li>
           <li><a href="/login">log in</a></li>
@@ -25,7 +25,7 @@ export default function Homepage() {
         </div>
       </main>
       <footer>
-        <p>© 2023 jotter</p>
+        <p className="logo">© 2023 jotter</p>
         <ul>
           <li><a href="https://github.com/bourdier/jotter"><i class="fa-brands fa-github"></i></a></li>
         </ul>
