@@ -96,7 +96,7 @@ input:active {
 .navtab__body {
   display: flex;
   flex-direction: column;
-  padding: 15px 25px;
+  padding: 15px 35px;
 }
 .navtab__body h2 {
   margin: 0;
