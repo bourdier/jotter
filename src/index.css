@@ -20,6 +20,30 @@ p {
   font-weight: 400;
 }
 
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+button a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+button:hover {
+  background-color: #1f1f1f;
+}
+button:focus {
+  outline: none;
+}
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
 .homepage {
   max-width: 1440px;
   margin: 0 auto;

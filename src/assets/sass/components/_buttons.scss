@@ -1,0 +1,23 @@
+button {
+  background-color: $primary;
+  color: $white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  a {
+    color: $white !important;
+    text-decoration: none !important;
+  }
+  &:hover {
+    background-color: lighten($primary, 12%);
+  }
+  &:focus {
+    outline: none;
+  }
+  &:disabled {
+    background-color: $gray;
+    cursor: not-allowed;
+  }
+}
