@@ -20,7 +20,7 @@ p {
   font-weight: 400;
 }
 
-button {
+button.signup {
   background-color: #000;
   color: #fff;
   border: none;
@@ -30,19 +30,29 @@ button {
   font-family: "Work Sans", sans-serif;
   transition: all 0.3s ease-in-out;
 }
-button a {
+button.signup a {
   color: #fff !important;
   text-decoration: none !important;
 }
-button:hover {
+button.signup:hover {
   background-color: #1f1f1f;
 }
-button:focus {
-  outline: none;
+button.no {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 20px;
+  cursor: pointer;
+  font-family: "Work Sans", sans-serif;
+  transition: all 0.3s ease-in-out;
 }
-button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
+button.no a {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+button.no:hover {
+  background-color: #e6e6e6;
 }
 
 .homepage {
