@@ -29,9 +29,11 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 25px 0;
 }
 .homepage nav h1 {
   font-size: 38px;
+  margin: 0;
 }
 .homepage nav ul {
   display: flex;
@@ -54,9 +56,11 @@ p {
 }
 .homepage main h2 {
   font-size: 30px;
+  margin: 0;
 }
 .homepage main p {
   font-size: 18px;
+  margin: 0;
 }
 .homepage main img {
   height: 512px;
@@ -83,6 +87,9 @@ p {
 }
 .homepage footer i {
   color: #fff;
+}
+.homepage footer i:hover {
+  color: #ccc;
 }
 .homepage footer p {
   font-size: 18px;
