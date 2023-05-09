@@ -1,8 +1,16 @@
-// import Navtab from "../components/Navtab";
-import Upperbar from "../components/Upperbar";
-import NotesList from "../components/NotesList";
+import React, { useEffect, useState } from "react";
 
 export default function Dashboard() {
+  const [notes, setNotes] = useState(0)
+
+  const newNote = () => {
+    setNotes(notes + 1)
+  }
+
+  const toZero = () => {
+    setNotes(0)
+  }
+
   return (
     <div className="dashboard">
       <div className="dashboard__header">
@@ -14,7 +22,7 @@ export default function Dashboard() {
           </div>
           <div className="navtab__tools navtab__body">
             <ul className="no-bullet">
-              <li><button className="no"><i className="fa-solid fa-fw fa-square-plus"></i>New notes</button></li>
+              <li><button className="no" onClick={newNote}><i className="fa-solid fa-fw fa-square-plus"></i>New notes</button></li>
               <li><button className="no"><i className="fa-solid fa-fw fa-folder-plus"></i>New folder</button></li>
               <li><button className="no"><i className="fa-solid fa-fw fa-file-arrow-up"></i>Import notes</button></li>
             </ul>
@@ -37,8 +45,25 @@ export default function Dashboard() {
         </div>        
       </div>
       <div className="dashboard__content">
-        <Upperbar />
-        <NotesList />
+        {notes === 0 ? (
+          <div className="upperbar">
+            <h2>All notes</h2>
+          </div>
+        ) : (
+          <div className="upperbar">
+            <h2>New</h2>
+            <button className="no" onClick={toZero}><i class="fa-solid fa-fw fa-arrow-left"></i></button>
+          </div>
+        )}
+        {notes === 0 ? (
+          <div className="notes-list">
+            <p>test</p>
+          </div>
+        ) : (
+          <div className="notes-editor">
+            <textarea>test</textarea>
+          </div>
+        )}
       </div>
     </div>
   )
