@@ -60,6 +60,15 @@ ul.no-bullet {
   padding: 0;
 }
 
+input {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+input:active {
+  border: 1px solid #000;
+}
+
 .homepage {
   max-width: 1440px;
   margin: 0 auto;
