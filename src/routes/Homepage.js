@@ -1,4 +1,4 @@
-import preview from '../assets/images/preview.png';
+import Preview from '../assets/images/preview.png';
 
 export default function Homepage() {
   return (
@@ -21,7 +21,7 @@ export default function Homepage() {
           </p>
         </div>
         <div class="homepage__preview">
-          <img src={preview} alt="Jotter preview" />
+          <img src={Preview} alt="Jotter preview" />
         </div>
       </main>
       <footer>
