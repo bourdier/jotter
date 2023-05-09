@@ -56,11 +56,10 @@ export default function Dashboard() {
         )}
         {notes === 0 ? (
           <div className="notes-list">
-            <p>test</p>
           </div>
         ) : (
-          <div className="notes-editor">
-            <textarea>test</textarea>
+          <div className="notes-editor" style={{height: "100%"}}>
+            <textarea style={{fontSize: 18,padding:25,border:0, width: "100%",minHeight:"100%"}}></textarea>
           </div>
         )}
       </div>
