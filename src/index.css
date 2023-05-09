@@ -69,6 +69,32 @@ input:active {
   border: 1px solid #000;
 }
 
+.navtab {
+  width: 300px;
+  height: 100vh;
+  border-right: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navtab__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navtab__body {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 50px;
+}
+.navtab button {
+  font-size: 20px;
+}
+.navtab i {
+  margin-right: 10px;
+}
+
 .homepage {
   max-width: 1440px;
   margin: 0 auto;

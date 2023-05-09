@@ -1,0 +1,25 @@
+.navtab {
+  width: 300px;
+  height: 100vh;
+  border-right: 1px solid $secondary;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+  }
+  button {
+    font-size: 20px;
+  }
+  i {
+    margin-right: 10px;
+  }
+}
