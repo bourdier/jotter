@@ -131,6 +131,12 @@ input:active {
   font-family: "Work Sans", sans-serif;
 }
 
+.notes-list {
+  height: 100%;
+  width: 300px;
+  border-right: 1px solid #eee;
+}
+
 .homepage {
   max-width: 1440px;
   margin: 0 auto;
