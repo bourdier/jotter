@@ -22,6 +22,12 @@
       margin: 5px 0 0 0;
     }
   }
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   i {
     margin-right: 10px;
   }

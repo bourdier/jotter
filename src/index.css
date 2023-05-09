@@ -97,6 +97,12 @@ input:active {
 .navtab__body ul {
   margin: 5px 0 0 0;
 }
+.navtab__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .navtab i {
   margin-right: 10px;
 }
