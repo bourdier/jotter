@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import Markdown from 'marked-react';
 
 export default function Dashboard() {
   const [createNote, setCreateNote] = useState(false)
@@ -71,7 +72,8 @@ export default function Dashboard() {
             </ul>
           </div>
           <div className="notes-editor">
-            <textarea ref={editor}></textarea>
+          <div id="editor" contenteditable="true">
+          </div>
           </div>
           </>
         )}
