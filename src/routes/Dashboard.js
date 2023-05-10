@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useRef, useState } from "react";
 
 export default function Dashboard() {
   const [createNote, setCreateNote] = useState(false)
-  const [notes, setNotes] = useState([])
+  const editor = useRef(null);
+  let notes = [];
 
   const newNote = () => {
     setCreateNote(true)
@@ -10,14 +11,12 @@ export default function Dashboard() {
 
   const goBack = () => {
     setCreateNote(false)
-    saveNote();
   }
 
   const saveNote = () => {
+    notes.push(editor.current.value)
     console.log(notes)
   }
-
-
 
   return (
     <div className="dashboard">
@@ -66,12 +65,13 @@ export default function Dashboard() {
           <div className="upperbar">
             <button onClick={goBack} className="no tools"><i className="fa-solid fa-fw fa-arrow-left"></i>Go back</button>
             <ul className="upperbar__tools">
-              <li><button onclick={saveNote} className="no tools"><i className="fa-solid fa-fw fa-floppy-disk"></i>Save</button></li>
+              <li><button onClick={saveNote} className="no tools"><i className="fa-solid fa-fw fa-floppy-disk"></i>Save</button></li>
               <li><button className="no tools"><i className="fa-solid fa-fw fa-file-arrow-down"></i>Export</button></li>
               <li><button className="no tools"><i className="fa-solid fa-fw fa-trash"></i>Delete</button></li>
             </ul>
           </div>
           <div className="notes-editor">
+            <textarea ref={editor}></textarea>
           </div>
           </>
         )}
