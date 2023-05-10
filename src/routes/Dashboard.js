@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 
 export default function Dashboard() {
-  const [notes, setNotes] = useState(0)
+  const [newNotes, setNewNotes] = useState(0)
 
   const newNote = () => {
-    setNotes(notes + 1)
+    setNewNotes(newNotes + 1)
   }
 
-  const toZero = () => {
-    setNotes(0)
+  const goBack = () => {
+    setNewNotes(0)
   }
 
   return (
@@ -45,16 +45,16 @@ export default function Dashboard() {
         </div>        
       </div>
       <div className="dashboard__content">
-        {notes === 0 ? (
+        {newNotes === 0 ? (
           <div className="upperbar">
             <h2>All notes</h2>
           </div>
         ) : (
           <div className="upperbar">
-            <button onClick={toZero}><i class="fa-solid fa-fw fa-arrow-left"></i> Go back</button>
+            <button onClick={goBack}><i class="fa-solid fa-fw fa-arrow-left"></i> Go back</button>
           </div>
         )}
-        {notes === 0 ? (
+        {newNotes === 0 ? (
           <div className="notes-list">
           </div>
         ) : (
