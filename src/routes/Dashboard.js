@@ -1,10 +1,9 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import Markdown from 'marked-react';
 
 export default function Dashboard() {
   const [createNote, setCreateNote] = useState(false)
-  const editor = useRef(null);
-  let notes = [];
+  const [viewNote, setViewNote] = useState(false)
 
   const newNote = () => {
     setCreateNote(true)
@@ -14,9 +13,8 @@ export default function Dashboard() {
     setCreateNote(false)
   }
 
-  const saveNote = () => {
-    notes.push(editor.current.value)
-    console.log(notes)
+  const openNote = () => {
+    setViewNote(true)
   }
 
   return (
@@ -59,22 +57,24 @@ export default function Dashboard() {
               <h2>All notes</h2>
             </div>
             <div className="notes-list">
+              <button onclick={openNote}>Note</button>
             </div>
           </>
         ) : (
           <>
-          <div className="upperbar">
-            <button onClick={goBack} className="no tools"><i className="fa-solid fa-fw fa-arrow-left"></i>Go back</button>
-            <ul className="upperbar__tools">
-              <li><button onClick={saveNote} className="no tools"><i className="fa-solid fa-fw fa-floppy-disk"></i>Save</button></li>
-              <li><button className="no tools"><i className="fa-solid fa-fw fa-file-arrow-down"></i>Export</button></li>
-              <li><button className="no tools"><i className="fa-solid fa-fw fa-trash"></i>Delete</button></li>
-            </ul>
-          </div>
-          <div className="notes-editor">
-          <div id="editor" contenteditable="true">
-          </div>
-          </div>
+            <div className="upperbar">
+              <button onClick={goBack} className="no tools"><i className="fa-solid fa-fw fa-arrow-left"></i>Go back</button>
+              <ul className="upperbar__tools">
+                <li><button className="no tools"><i className="fa-solid fa-fw fa-floppy-disk"></i>Save</button></li>
+                <li><button className="no tools"><i className="fa-solid fa-fw fa-eye"></i>Preview</button></li>
+                <li><button className="no tools"><i className="fa-solid fa-fw fa-file-arrow-down"></i>Export</button></li>
+                <li><button className="no tools"><i className="fa-solid fa-fw fa-trash"></i>Delete</button></li>
+              </ul>
+            </div>
+            <div className="notes-editor">
+            <div id="editor" contenteditable="true">
+            </div>
+            </div>
           </>
         )}
       </div>
