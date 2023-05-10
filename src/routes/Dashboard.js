@@ -64,7 +64,12 @@ export default function Dashboard() {
         ) : (
           <>
           <div className="upperbar">
-            <button onClick={goBack}><i class="fa-solid fa-fw fa-arrow-left"></i> Go back</button>
+            <button onClick={goBack}><i class="fa-solid fa-fw fa-arrow-left"></i>Go back</button>
+            <div class="upperbar__tools">
+              <button onclick={saveNote}><i class="fa-solid fa-fw fa-floppy-disk"></i>Save</button>
+              <button><i class="fa-solid fa-fw fa-file-arrow-down"></i>Export</button>
+              <button><i class="fa-solid fa-fw fa-trash"></i>Delete</button>
+            </div>
           </div>
           <div className="notes-editor">
           </div>
