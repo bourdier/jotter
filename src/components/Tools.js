@@ -36,7 +36,7 @@ export default function EditorTools({ editor }) {
         </ul>
       </div>
       <div className="notes">
-        <div id="editor" contenteditable="true"></div>
+        <textarea id="editor"></textarea>
       </div>
     </>
   ) : (
