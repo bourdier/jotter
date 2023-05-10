@@ -58,8 +58,8 @@ export default function Dashboard() {
           <div className="notes-list">
           </div>
         ) : (
-          <div className="notes-editor" style={{height: "100%"}}>
-            <textarea style={{fontSize: 18,padding:25,border:0, width: "100%",minHeight:"100%"}}></textarea>
+          <div className="notes-editor">
+            
           </div>
         )}
       </div>
