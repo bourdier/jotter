@@ -6,8 +6,7 @@ export default function Dashboard({ children }) {
 
   return (
     <>
-      <div className="dashboard__header">
-        <div className="navtab">
+      <div className="navtab">
         <div className="navtab__header">
           <div className="navtab__header__content">
             <h1 className="logo">jotter</h1>
@@ -35,8 +34,7 @@ export default function Dashboard({ children }) {
             <li><button className="no"><i className="fa-solid fa-fw fa-arrow-right-from-bracket"></i>Log out</button></li>
           </ul>
         </div>
-        </div>        
-      </div>
+      </div>        
     </>
   )
 }
