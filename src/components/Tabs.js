@@ -5,7 +5,7 @@ export default function Dashboard({ children }) {
   }
 
   return (
-    <div className="dashboard">
+    <>
       <div className="dashboard__header">
         <div className="navtab">
         <div className="navtab__header">
@@ -37,9 +37,6 @@ export default function Dashboard({ children }) {
         </div>
         </div>        
       </div>
-      <div className="dashboard__content">
-        { children }
-      </div>
-    </div>
+    </>
   )
 }
