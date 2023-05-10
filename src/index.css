@@ -60,6 +60,9 @@ button.no:hover {
   background-color: #e6e6e6;
   color: #000;
 }
+button.tools {
+  width: unset;
+}
 
 ul.no-bullet {
   list-style-type: none;
