@@ -1,6 +1,6 @@
 .upperbar {
   height: 75px;
-  width: 100%;
+  // width: 100%;
   border-bottom: 1px solid $secondary;
   display: flex;
   justify-content: space-between;
@@ -9,5 +9,14 @@
   h2 {
     margin: 0;
     font-family: $subtitle;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 8px;
+  }
+  i {
+    margin-right: 6px;
   }
 }

@@ -65,11 +65,11 @@ export default function Dashboard() {
           <>
           <div className="upperbar">
             <button onClick={goBack} className="no tools"><i className="fa-solid fa-fw fa-arrow-left"></i>Go back</button>
-            <div className="upperbar__tools">
-              <button onclick={saveNote} className="no tools"><i className="fa-solid fa-fw fa-floppy-disk"></i>Save</button>
-              <button className="no tools"><i className="fa-solid fa-fw fa-file-arrow-down"></i>Export</button>
-              <button className="no tools"><i className="fa-solid fa-fw fa-trash"></i>Delete</button>
-            </div>
+            <ul className="upperbar__tools">
+              <li><button onclick={saveNote} className="no tools"><i className="fa-solid fa-fw fa-floppy-disk"></i>Save</button></li>
+              <li><button className="no tools"><i className="fa-solid fa-fw fa-file-arrow-down"></i>Export</button></li>
+              <li><button className="no tools"><i className="fa-solid fa-fw fa-trash"></i>Delete</button></li>
+            </ul>
           </div>
           <div className="notes-editor">
           </div>
