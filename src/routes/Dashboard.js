@@ -1,15 +1,23 @@
 import React, { useEffect, useState } from "react";
 
 export default function Dashboard() {
-  const [newNotes, setNewNotes] = useState(0)
+  const [createNote, setCreateNote] = useState(false)
+  const [notes, setNotes] = useState([])
 
   const newNote = () => {
-    setNewNotes(newNotes + 1)
+    setCreateNote(true)
   }
 
   const goBack = () => {
-    setNewNotes(0)
+    setCreateNote(false)
+    saveNote();
   }
+
+  const saveNote = () => {
+    console.log(notes)
+  }
+
+
 
   return (
     <div className="dashboard">
@@ -45,22 +53,22 @@ export default function Dashboard() {
         </div>        
       </div>
       <div className="dashboard__content">
-        {newNotes === 0 ? (
-          <div className="upperbar">
-            <h2>All notes</h2>
-          </div>
+        {createNote === false ? (
+          <>
+            <div className="upperbar">
+              <h2>All notes</h2>
+            </div>
+            <div className="notes-list">
+            </div>
+          </>
         ) : (
+          <>
           <div className="upperbar">
             <button onClick={goBack}><i class="fa-solid fa-fw fa-arrow-left"></i> Go back</button>
           </div>
-        )}
-        {newNotes === 0 ? (
-          <div className="notes-list">
-          </div>
-        ) : (
           <div className="notes-editor">
-            
           </div>
+          </>
         )}
       </div>
     </div>
