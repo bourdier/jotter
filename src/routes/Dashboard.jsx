@@ -6,6 +6,9 @@ export default function Dashboard() {
       <div className="upperbar">
           <h1>jotter</h1>
         <ul className="upperbar__tools">
+        <li>
+            <button className="no tools"><i className="fa-solid fa-fw fa-square-plus"></i>New note</button>
+          </li>
           <li>
             <button className="no tools"><i className="fa-solid fa-fw fa-file-arrow-up"></i>Import</button>
           </li>
