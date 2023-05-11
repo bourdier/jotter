@@ -5,8 +5,10 @@ export default function EditorTools({ editor, note }) {
   }
 
   async function saveNote() {
+    let rand = Math.floor(Math.random() * 100000000);
+
     const body = {
-      id: Math.floor(Math.random() * 100000000),
+      id: JSON.stringify(rand),
       title: note.split('\n')[0],
       content: note.split('\n').slice(1).join('\n'),
       date: new Date().toLocaleDateString()
