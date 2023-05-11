@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "sass": "sass --watch ./src/assets/sass/main.scss:./src/index.css  --style expanded",
+    "sass": "sass --watch ./src/assets/sass/main.scss:./src/index.css  --style compressed",
     "api": "node api.mjs",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
