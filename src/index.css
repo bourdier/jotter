@@ -199,6 +199,10 @@ form button {
   margin-right: 0;
 }
 
+.dashboard__content {
+  padding: 25px;
+}
+
 .homepage {
   max-width: 1440px;
   margin: 0 auto;
