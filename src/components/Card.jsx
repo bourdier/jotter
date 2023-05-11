@@ -7,10 +7,17 @@ export default function Card({ data }) {
     window.location = `/notes/${note.id}`
   }
 
-  // if h2 contain # it will be removed function
   const removeHash = (str) => {
     if (str.charAt(0) === '#') {
       return str.slice(1);
+    } else {
+      return str;
+    }
+  }
+
+  const removeContent = (str) => {
+    if (str.length > 50) {
+      return str.slice(0, 50) + '...';
     } else {
       return str;
     }
@@ -25,7 +32,7 @@ export default function Card({ data }) {
         </div>
         <div className="card__content">
           <Markdown>
-            {note.content}
+            {removeContent(note.content)}
           </Markdown>
         </div>
         <div className="card__tags__list">
