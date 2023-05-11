@@ -101,6 +101,15 @@ input:active {
   outline: none;
 }
 
+form label {
+  display: block;
+  margin: 5px 0 5px 0;
+  font-family: "Work Sans", sans-serif;
+}
+form button {
+  margin: 10px 0 10px 0;
+}
+
 .upperbar {
   height: 75px;
   border-bottom: 1px solid #eee;
