@@ -1,6 +1,6 @@
 import Card from "../components/Card";
 
-export default function Dashboard() {
+export default function Dashboard({ data }) {
 
   const redirection = (path) => {
     window.location = path
@@ -26,7 +26,7 @@ export default function Dashboard() {
         </ul>
       </div>
       <div className="dashboard__content">
-        <Card />
+        <Card data={data} />
       </div>
     </div>
   )

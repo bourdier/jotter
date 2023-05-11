@@ -1,22 +1,29 @@
 import { Link } from "react-router-dom";
 
-export default function Card() {
+export default function Card({ data }) {
+
+  console.log(data)
+
   return (
-    <div className="card">
-      <div className="card__header">
-        <h2>Card title</h2>
+    <>
+    {data?.map((note) => 
+      <div className="card" key={note.id}>
+        <div className="card__header">
+          <h2>{note.title}</h2>
+        </div>
+        <div className="card__content">
+          <p>
+            {note.content}
+          </p>
+        </div>
+        <div className="card__tags__list">
+          <ul className="no-bullet">
+            <li>Tags</li>
+          </ul>
+        </div>
+        <Link to="/notes"></Link>
       </div>
-      <div className="card__content">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-      </div>
-      <div className="card__tags__list">
-        <ul className="no-bullet">
-          <li>Tags 1</li>
-        </ul>
-      </div>
-      <Link to="/notes"></Link>
-    </div>
+    )}
+    </>
   )
 }
