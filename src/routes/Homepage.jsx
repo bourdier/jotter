@@ -28,7 +28,7 @@ export default function Homepage() {
       <footer>
         <p className="logo">© 2023 jotter</p>
         <ul>
-          <li><Link to="https://github.com/bourdier/jotter"><i class="fa-brands fa-github"></i></Link></li>
+          <li><Link to="https://github.com/bourdier/jotter"><i className="fa-brands fa-github"></i></Link></li>
         </ul>
       </footer>
     </div>
