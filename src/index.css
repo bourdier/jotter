@@ -235,8 +235,18 @@ form button {
   border: 1px solid #eee;
   border-radius: 5px;
 }
-.sign h1 {
+.sign__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.sign__header h1 {
   margin: 0 0 15px 0;
+}
+.sign__header i {
+  font-size: 26px;
+  cursor: pointer;
 }
 .sign__form {
   display: flex;
