@@ -1,11 +1,9 @@
 import Tools from "../components/Tools";
 
 export default function Dashboard() {
-  let editor = false;
-
   return (
     <div className="dashboard">
-      <Tools editor={editor} />      
+      <Tools/>      
       <div className="dashboard__content">
 
       </div>
