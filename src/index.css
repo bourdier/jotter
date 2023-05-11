@@ -21,6 +21,13 @@ p {
   font-weight: 400;
 }
 
+a {
+  color: #262626;
+}
+a .no_decoration {
+  text-decoration: none;
+}
+
 button.signup {
   background-color: #000;
   color: #fff;
