@@ -33,7 +33,7 @@ function App() {
         <Route path="/usage" element={<Usage />} />
         <Route path="/dashboard" element={<Dashboard data={data} />} />
         <Route path="/editor" element={<Editor />} />
-        <Route path="/notes" element={<Notes />} />
+        <Route path={`notes/:id`} element={<Notes data={data} />} />
       </Routes>
     </>
   )
