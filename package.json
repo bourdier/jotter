@@ -6,11 +6,16 @@
   "scripts": {
     "dev": "vite",
     "sass": "sass --watch ./src/assets/sass/main.scss:./src/index.css  --style expanded",
+    "api": "node api.mjs",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "log-symbols": "^5.1.0",
+    "mongodb": "^5.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.1",
