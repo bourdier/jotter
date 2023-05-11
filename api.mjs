@@ -44,6 +44,11 @@ app.post('/', async (req, res) => {
     res.send(data);
 });
 
+app.put('/', async (req, res) => {
+    let data = await col.updateOne(req.body);
+    res.send(data);
+});
+
 app.delete('/', async (req, res) => {
     let data = await col.deleteOne(req.body);
     res.send(data);
