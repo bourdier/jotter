@@ -39,9 +39,6 @@ export default function EditorTools({ editor }) {
           </li>
         </ul>
       </div>
-      <div className="notes">
-        <textarea id="editor"></textarea>
-      </div>
     </>
   ) : (
       <div className="upperbar">
