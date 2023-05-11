@@ -5,7 +5,14 @@ export default function Card() {
         <h2>Card title</h2>
       </div>
       <div className="card__content">
-        <p>Card content</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+      <div className="card__tags">
+        <ul className="no-bullet">
+          <li>Tags 1</li>
+        </ul>
       </div>
     </div>
   )

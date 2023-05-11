@@ -117,6 +117,54 @@ form button {
   margin: 10px 0 10px 0;
 }
 
+.card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+.card__header h3 {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+}
+.card__header i {
+  cursor: pointer;
+}
+.card__header i:hover {
+  color: #262626;
+}
+.card__content p {
+  margin: 0;
+  font-size: 16px;
+}
+.card__tags {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 10px;
+  border-top: 1px solid #eee;
+}
+.card__tags p {
+  margin: 0;
+  font-size: 14px;
+  background-color: #eee;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
 .upperbar {
   height: 75px;
   border-bottom: 1px solid #eee;

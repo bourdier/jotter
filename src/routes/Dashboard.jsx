@@ -1,3 +1,5 @@
+import Card from "../components/Card";
+
 export default function Dashboard() {
   return (
     <div className="dashboard">
@@ -16,7 +18,7 @@ export default function Dashboard() {
         </ul>
       </div>
       <div className="dashboard__content">
-        
+        <Card />
       </div>
     </div>
   )
