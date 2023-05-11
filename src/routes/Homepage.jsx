@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Preview from '../assets/images/preview.png';
 
 export default function Homepage() {
@@ -6,9 +7,9 @@ export default function Homepage() {
       <nav>
         <h1 className="logo">jotter</h1>
         <ul>
-          <li><a href="/usage">usage</a></li>
-          <li><a href="/login">log in</a></li>
-          <li><a href="/signup"><button className="signup">sign up</button></a></li>
+          <li><Link to="/usage">usage</Link></li>
+          <li><Link to="/login">log in</Link></li>
+          <li><Link to="/signup"><button className="signup">sign up</button></Link></li>
         </ul>
       </nav>
       <main>
@@ -27,7 +28,7 @@ export default function Homepage() {
       <footer>
         <p className="logo">© 2023 jotter</p>
         <ul>
-          <li><a href="https://github.com/bourdier/jotter"><i class="fa-brands fa-github"></i></a></li>
+          <li><Link to="https://github.com/bourdier/jotter"><i class="fa-brands fa-github"></i></Link></li>
         </ul>
       </footer>
     </div>
