@@ -2,6 +2,7 @@ import express from 'express';
 import { MongoClient } from 'mongodb';
 import dotenv from 'dotenv';
 import logSymbols from 'log-symbols';
+import bodyParser from 'body-parser';
 const app = express();
 const port = 8080;
 dotenv.config();
@@ -15,6 +16,14 @@ let col;
 app.listen(port, () => {
   console.log(`${logSymbols.success} Listening on port ${port}`);
 });
+
+app.use(bodyParser.json());
+
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "http://localhost:5173"); // update to match the domain you will make the request from
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+  });
 
 try {
     client.connect();

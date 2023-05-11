@@ -1,7 +1,27 @@
-export default function EditorTools({ editor }) {
+export default function EditorTools({ editor, note }) {
 
   const redirection = (path) => {
     window.location = path
+  }
+
+  async function saveNote() {
+    const body = {
+      id: Math.floor(Math.random() * 100000000),
+      title: note.split('\n')[0],
+      content: note.split('\n').slice(1).join('\n'),
+      date: new Date().toLocaleDateString()
+    }
+
+    const response = await fetch('http://localhost:8080/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(body)
+    })
+
+    const data = await response.json();
+    console.log(data);
   }
 
   return editor === true ? (
@@ -12,7 +32,7 @@ export default function EditorTools({ editor }) {
         </button>
         <ul className="upperbar__tools">
           <li>
-            <button className="no tools">
+            <button className="no tools" onClick={() => saveNote()}>
               <i className="fa-solid fa-fw fa-floppy-disk"></i>Save
             </button>
           </li>
