@@ -2,12 +2,14 @@ import { Link } from "react-router-dom";
 
 export default function Card({ data }) {
 
-  console.log(data)
+  const redirectTo = (note) => {
+    window.location = `/notes/${note.id}`
+  }
 
   return (
     <>
     {data?.map((note) => 
-      <div className="card" key={note.id}>
+      <div className="card" key={note.id} onClick={() => {redirectTo(note)}}>
         <div className="card__header">
           <h2>{note.title}</h2>
         </div>
