@@ -1,9 +1,12 @@
 .notes {
   height: calc(100vh - 75px);
-  width: auto;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
   #editor {
     height: 100%;
-    width: 100%;
+    width: 50%;
     padding: 25px;
     box-sizing: border-box;
     overflow-y: scroll;
@@ -14,10 +17,19 @@
       outline: none;
     }
   }
-  &__content {
+  &_content {
     padding: 25px;
+  }
+  &__preview {
+    flex: 1;
+    padding: 25px;
+    box-sizing: border-box;
+    border-left: 1px solid $secondary;
     h1 {
       margin: 0;
+    }
+    &:focus {
+      outline: none;
     }
   }
 }

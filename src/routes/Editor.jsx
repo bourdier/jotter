@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Markdown from "marked-react";
 import Tools from "../components/Tools";
 
-export default function Dashboard() {
+export default function Editor() {
   const [saveNote, setSaveNote] = useState("");
   const [previewContent, setPreviewContent] = useState("");
   let edition = true;
@@ -19,16 +19,14 @@ export default function Dashboard() {
   }, [saveNote]);
 
   return (
-    <div className="dashboard">
-      <Tools editor={edition} note={saveNote} />      
-      <div className="dashboard__content">
+    <>
+      <Tools editor={edition} note={saveNote} />
         <div className="notes">
           <textarea id="editor"></textarea>
-        </div>
-        <div className="preview">
-          <Markdown>{previewContent}</Markdown>
-        </div>
+          <div className="notes__preview">
+            <Markdown>{previewContent}</Markdown>
+          </div>
       </div>
-    </div>
+    </>
   );
 }
