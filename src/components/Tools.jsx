@@ -17,7 +17,7 @@ export default function EditorTools({ editor }) {
             </button>
           </li>
           <li>
-            <button className="no tools">
+            <button className="no tools" onClick={() => redirection('/notes')}>
               <i className="fa-solid fa-fw fa-eye"></i>Preview
             </button>
           </li>
@@ -50,7 +50,7 @@ export default function EditorTools({ editor }) {
         </button>
         <ul className="upperbar__tools">
         <li>
-            <button className="no tools">
+            <button className="no tools" onClick={() => redirection('/editor')}>
               <i className="fa-solid fa-fw fa-pen-to-square"></i>Edit
             </button>
           </li>
