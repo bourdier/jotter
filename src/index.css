@@ -212,6 +212,10 @@ form button {
 
 .dashboard__content {
   padding: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
 }
 
 .homepage {
