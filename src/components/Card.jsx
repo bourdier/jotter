@@ -9,7 +9,7 @@ export default function Card() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
       </div>
-      <div className="card__tags">
+      <div className="card__tags__list">
         <ul className="no-bullet">
           <li>Tags 1</li>
         </ul>

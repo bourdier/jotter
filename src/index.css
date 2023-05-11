@@ -146,7 +146,7 @@ form button {
   margin: 0;
   font-size: 16px;
 }
-.card__tags {
+.card__tags__list {
   position: absolute;
   bottom: 0;
   width: 90%;
@@ -156,11 +156,20 @@ form button {
   margin-top: 10px;
   border-top: 1px solid #eee;
 }
-.card__tags p {
+.card__tags__list p {
   margin: 0;
   font-size: 14px;
   background-color: #eee;
   color: #fff;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+.card__tags__list li {
+  margin: 0;
+  font-size: 14px;
+  background-color: #000;
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
   padding: 2px 5px;
   border-radius: 5px;
 }

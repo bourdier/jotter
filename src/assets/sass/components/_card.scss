@@ -28,7 +28,7 @@
       font-size: 16px;
     }
   }
-  &__tags {
+  &__tags__list {
     position: absolute;
     bottom: 0;
     width: 90%;
@@ -42,6 +42,15 @@
       font-size: 14px;
       background-color: $secondary;
       color: $white;
+      padding: 2px 5px;
+      border-radius: 5px;
+    }
+    li {
+      margin: 0;
+      font-size: 14px;
+      background-color: $primary;
+      color: $white;
+      font-family: $subtitle;
       padding: 2px 5px;
       border-radius: 5px;
     }
