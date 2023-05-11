@@ -5,7 +5,7 @@ export default function Signup() {
     <div className="sign">
       <div className="sign__header">
         <h1>Sign up</h1>
-        <Link to="/"><button className="no"><i className="fa-solid fa-xmark"></i></button></Link>
+        <Link to="/" className="no-decoration"><button className="no"><i className="fa-solid fa-xmark"></i></button></Link>
       </div>
       <form className="sign__form">
         <label htmlFor="email">Email</label>
