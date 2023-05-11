@@ -197,6 +197,18 @@ form button {
   max-width: 500px;
   margin: auto 0;
 }
+.homepage__preview {
+  display: flex;
+  flex-direction: column;
+}
+.homepage__preview__credits {
+  margin-top: 5px;
+  font-family: "Work Sans", sans-serif;
+}
+.homepage__preview--small__image {
+  width: 512px !important;
+  height: 512px !important;
+}
 .homepage footer {
   display: flex;
   justify-content: space-around;
