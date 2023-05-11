@@ -197,6 +197,11 @@ form button {
   max-width: 500px;
   margin: auto 0;
 }
+.homepage__hero__header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 .homepage__preview {
   display: flex;
   flex-direction: column;

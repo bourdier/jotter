@@ -22,7 +22,10 @@ export default function Homepage() {
       </nav>
       <main>
         <div className="homepage__hero">
-          <h2>Usage</h2>
+          <div className="homepage__hero__header">
+            <Link to="/" className="no-decoration"><button className="no"><i className="fa-solid fa-arrow-left"></i></button></Link>
+            <h2>Usage</h2>
+          </div>
           <p>
             To use Jotter, simply log in or signup and create a new note by
             clicking the "New Note" button. You can then start typing your note
