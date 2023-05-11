@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Markdown from "marked-react";
 import Tools from "../components/Tools";
 
 export default function Notes({ data }) {
@@ -25,8 +26,8 @@ export default function Notes({ data }) {
     <>
       <Tools editor={editor} />
       <div className="notes__content" key={note.id}>
-        <h2>{note.title}</h2>
-        <p>{note.content}</p>
+        <Markdown>{note.title}</Markdown>
+        <Markdown>{note.content}</Markdown>
       </div>
     </>
   );
