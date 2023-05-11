@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo:400,700');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Hind+Madurai:400,700');
+
+$title: 'Cairo', sans-serif;
+$subtitle: 'Work Sans', sans-serif;
+$text: 'Hind Madurai', sans-serif;
+
+h1, h2 {
+  font-family: $title;
+  font-weight: 400;
+}
+
+a {
+  font-family: $subtitle;
+  font-weight: 400;
+}
+
+p {
+  font-family: $text;
+  font-weight: 400;
+}
