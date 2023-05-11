@@ -1,5 +1,3 @@
-import Viewer from "./Viewer"
-
 export default function EditorTools({ editor }) {
 
   const redirection = (path) => {
@@ -9,7 +7,7 @@ export default function EditorTools({ editor }) {
   return editor === true ? (
     <>
       <div className="upperbar">
-        <button className="no tools" onClick={() => redirection('/home')}>
+        <button className="no tools" onClick={() => redirection('/dashboard')}>
           <i className="fa-solid fa-fw fa-arrow-left"></i>Go back
         </button>
         <ul className="upperbar__tools">
@@ -40,9 +38,8 @@ export default function EditorTools({ editor }) {
       </div>
     </>
   ) : (
-    <>
       <div className="upperbar">
-        <button className="no tools" onClick={() => redirection('/home')}>
+        <button className="no tools" onClick={() => redirection('/dashboard')}>
           <i className="fa-solid fa-fw fa-arrow-left"></i>Go back
         </button>
         <ul className="upperbar__tools">
@@ -58,9 +55,5 @@ export default function EditorTools({ editor }) {
           </li>
         </ul>
       </div>
-      <div className="notes">
-        <Viewer />
-      </div>
-    </>
   )
 }

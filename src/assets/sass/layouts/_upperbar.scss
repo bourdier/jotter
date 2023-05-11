@@ -17,5 +17,8 @@
   }
   i {
     margin-right: 6px;
+    &.no-text {
+      margin-right: 0;
+    }
   }
 }
