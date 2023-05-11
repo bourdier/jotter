@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Card() {
   return (
     <div className="card">
@@ -14,6 +16,7 @@ export default function Card() {
           <li>Tags 1</li>
         </ul>
       </div>
+      <Link to="/notes"></Link>
     </div>
   )
 }

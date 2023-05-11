@@ -148,6 +148,7 @@ form button {
 }
 .card__tags__list {
   position: absolute;
+  z-index: 2;
   bottom: 0;
   width: 90%;
   display: flex;
@@ -172,6 +173,16 @@ form button {
   font-family: "Work Sans", sans-serif;
   padding: 2px 5px;
   border-radius: 5px;
+}
+.card a::before {
+  content: "";
+  z-index: 1;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 
 .upperbar {
