@@ -19,7 +19,7 @@ export default function Editor() {
   }, [saveNote]);
 
   return (
-    <>
+    <div className="dashboard">
       <Tools editor={edition} note={saveNote} />
         <div className="notes">
           <textarea id="editor"></textarea>
@@ -27,6 +27,6 @@ export default function Editor() {
             <Markdown>{previewContent}</Markdown>
           </div>
       </div>
-    </>
+    </div>
   );
 }
