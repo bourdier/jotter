@@ -1,26 +1,34 @@
 import { useState, useEffect } from "react";
+import Markdown from "marked-react";
 import Tools from "../components/Tools";
 
 export default function Dashboard() {
-  const [saveNote, setSaveNote] = useState([]);
-  let editor = true;
+  const [saveNote, setSaveNote] = useState("");
+  const [previewContent, setPreviewContent] = useState("");
+  let edition = true;
 
-  // Get textarea value and pass as props to Tools component
   useEffect(() => {
-    const editor = document.getElementById('editor');
-    editor.addEventListener('input', () => {
+    let editor = document.getElementById("editor");
+    editor.addEventListener("input", () => {
       setSaveNote(editor.value);
-    })
-  }, [])
+    });
+  }, []);
+
+  useEffect(() => {
+    setPreviewContent(saveNote);
+  }, [saveNote]);
 
   return (
     <div className="dashboard">
-      <Tools editor={editor} note={saveNote} />      
+      <Tools editor={edition} note={saveNote} />      
       <div className="dashboard__content">
         <div className="notes">
           <textarea id="editor"></textarea>
         </div>
+        <div className="preview">
+          <Markdown>{previewContent}</Markdown>
+        </div>
       </div>
     </div>
-  )
+  );
 }
