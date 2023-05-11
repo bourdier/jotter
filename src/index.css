@@ -24,7 +24,7 @@ p {
 a {
   color: #262626;
 }
-a .no_decoration {
+a.no-decoration {
   text-decoration: none;
 }
 

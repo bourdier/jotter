@@ -1,6 +1,6 @@
 a {
   color: $tertiary;
-  .no_decoration {
+  &.no-decoration {
     text-decoration: none;
   }
 }
