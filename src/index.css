@@ -218,4 +218,25 @@ input:active {
   text-decoration: underline;
 }
 
+.sign {
+  margin: auto;
+  width: 300px;
+  padding: 25px;
+  margin-top: 100px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+.sign h1 {
+  margin: 0 0 15px 0;
+}
+.sign__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+.sign__form button {
+  font-size: 18px;
+}
+
 /*# sourceMappingURL=index.css.map */
