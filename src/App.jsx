@@ -7,6 +7,7 @@ import Signup from './routes/Signup';
 import Usage from './routes/Usage';
 import Dashboard from './routes/Dashboard';
 import Editor from './routes/Editor';
+import Notes from './routes/Notes';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/usage" element={<Usage />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/editor" element={<Editor />} />
+        <Route path="/notes" element={<Notes />} />
       </Routes>
     </>
   )

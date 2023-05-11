@@ -1,6 +1,4 @@
-export default function EditorTools() {
-
-  let editor = false;
+export default function EditorTools({ editor }) {
 
   const redirection = (path) => {
     window.location = path
