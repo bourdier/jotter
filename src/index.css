@@ -107,6 +107,12 @@ input:active {
 .notes #editor:focus {
   outline: none;
 }
+.notes__content {
+  padding: 25px;
+}
+.notes__content h2 {
+  margin: 0;
+}
 
 form label {
   display: block;
