@@ -1,4 +1,4 @@
-export default function EditorTools({ editor, note }) {
+export default function EditorTools({ editor, note, children }) {
 
   const redirection = (path) => {
     window.location = path
@@ -39,9 +39,7 @@ export default function EditorTools({ editor, note }) {
             </button>
           </li>
           <li>
-            <button className="no tools" onClick={() => redirection('/notes')}>
-              <i className="fa-solid fa-fw fa-eye"></i>Preview
-            </button>
+            { children }
           </li>
           <li>
             <button className="no tools">
